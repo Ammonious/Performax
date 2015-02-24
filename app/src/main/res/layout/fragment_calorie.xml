@@ -1,0 +1,269 @@
+<ScrollView  xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    android:id="@+id/scrollView"
+    >
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+
+    tools:context="fitness.CalorieCalc">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Age"
+        android:id="@+id/age_title"
+        android:textColor="@color/white"
+        android:textSize="24dp"
+        android:layout_gravity="center_horizontal" />
+
+    <net.qiujuer.genius.widget.GeniusEditText
+        xmlns:genius="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/enter_age"
+        android:layout_width="75dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="4dp"
+        android:maxLines="1"
+        android:singleLine="true"
+        android:inputType="number"
+        android:hint="Age"
+        android:textSize="14sp"
+        android:gravity="center"
+        genius:g_borderWidth="2dp"
+        genius:g_cornerRadius="10dp"
+        genius:g_fieldStyle="transparent"
+        genius:g_theme="@array/GlacierGray" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Weight"
+        android:id="@+id/weight_title"
+        android:textColor="@color/white"
+        android:textSize="24dp"
+        android:layout_gravity="center_horizontal" />
+
+    <net.qiujuer.genius.widget.GeniusEditText
+        xmlns:genius="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/enter_weight"
+        android:layout_width="75dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="4dp"
+        android:maxLines="1"
+        android:singleLine="true"
+        android:inputType="number"
+        android:hint="Weight"
+        android:textSize="14sp"
+        android:gravity="center"
+        genius:g_borderWidth="2dp"
+        genius:g_cornerRadius="10dp"
+        genius:g_fieldStyle="transparent"
+        genius:g_theme="@array/GlacierGray" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Gender"
+        android:id="@+id/title2"
+        android:textColor="@color/white"
+        android:textSize="24dp"
+        android:layout_gravity="center_horizontal" />
+
+    <RadioGroup android:id="@+id/gender"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:orientation="horizontal">
+
+    <RadioButton
+        android:id="@+id/male"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="male"
+        android:layout_weight="1" />
+
+    <RadioButton
+        android:id="@+id/female"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:text="female"
+        android:layout_weight="1"/>
+</RadioGroup>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Height"
+        android:id="@+id/height_title"
+        android:textColor="@color/white"
+        android:textSize="24dp"
+        android:layout_gravity="center_horizontal" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal">
+
+        <net.qiujuer.genius.widget.GeniusEditText
+            xmlns:genius="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/enter_feet"
+            android:layout_width="75dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:inputType="number"
+            android:hint="Feet"
+            android:textSize="14sp"
+            android:gravity="center"
+            genius:g_borderWidth="2dp"
+            genius:g_cornerRadius="10dp"
+            genius:g_fieldStyle="transparent"
+            genius:g_theme="@array/GlacierGray" />
+
+        <net.qiujuer.genius.widget.GeniusEditText
+            xmlns:genius="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/enter_inches"
+            android:layout_width="75dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:inputType="number"
+            android:hint="Inches"
+            android:textSize="14sp"
+            android:gravity="center"
+            genius:g_borderWidth="2dp"
+            genius:g_cornerRadius="10dp"
+            genius:g_fieldStyle="transparent"
+            genius:g_theme="@array/GlacierGray" />
+
+    </LinearLayout>
+
+
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RadioGroup
+            android:id="@+id/activity_level"
+            android:orientation="vertical"
+            android:layout_marginTop="8dp"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Inactive"
+                android:layout_gravity="center_vertical"
+                android:id="@+id/inactive" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_gravity="center_vertical"
+                android:text="Never or rarely include physical activity in your day."
+                android:id="@+id/textView1"
+                android:textSize="12dp"/>
+
+            <RadioButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="Somewhat Active"
+                android:layout_gravity="center_vertical"
+                android:id="@+id/somewhat_active"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:text="Include light activity or moderate activity about two to three times a week."
+                android:id="@+id/textView2"
+                android:textSize="12dp"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/checkBox2"/>
+
+            <RadioButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="Active"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:id="@+id/active"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:text="Include at least 30 minutes of moderate activity most days of the week, or 20 minutes of vigorous activity at least three days a week."
+                android:id="@+id/textView3"
+                android:textSize="12dp"
+                />
+
+            <RadioButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="Very Active"
+                android:layout_gravity="center_vertical"
+                android:id="@+id/very_active"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:text="Include large amounts of moderate or vigorous activity in your day."
+                android:id="@+id/textView4"
+                android:layout_weight="1"
+                android:layout_gravity="center_vertical"
+                android:textSize="12dp"/>
+
+
+        </RadioGroup>
+
+
+    </LinearLayout>
+
+    <com.getbase.floatingactionbutton.FloatingActionButton
+        xmlns:fab="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/navigate"
+        android:layout_marginTop="25dp"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        fab:fab_icon="@drawable/ic_check"
+        fab:fab_colorNormal="@color/primary"
+        fab:fab_colorPressed="@color/accent"
+        android:layout_gravity="center|bottom"
+        />
+
+
+</LinearLayout>
+</ScrollView>

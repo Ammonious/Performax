@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+
+    <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/primary">
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/primary">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="Weight"
+        android:id="@+id/weight_title"
+        android:textColor="@color/white"
+        android:textSize="24dp"
+        android:layout_gravity="center_horizontal" />
+
+
+
+    <net.qiujuer.genius.widget.GeniusEditText
+        xmlns:genius="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/enter_weight"
+        android:layout_width="75dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="4dp"
+        android:maxLines="1"
+        android:singleLine="true"
+        android:inputType="number"
+        android:hint="Weight"
+        android:textSize="14sp"
+        android:gravity="center"
+        genius:g_borderWidth="2dp"
+        genius:g_cornerRadius="10dp"
+        genius:g_fieldStyle="transparent"
+        genius:g_theme="@array/GlacierGray" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="Height"
+        android:id="@+id/height_title"
+        android:textColor="@color/white"
+        android:textSize="24dp"
+        android:layout_gravity="center_horizontal" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal">
+
+        <net.qiujuer.genius.widget.GeniusEditText
+            xmlns:genius="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/enter_feet"
+            android:layout_width="75dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:inputType="number"
+            android:hint="Feet"
+            android:textSize="14sp"
+            android:gravity="center"
+            genius:g_borderWidth="2dp"
+            genius:g_cornerRadius="10dp"
+            genius:g_fieldStyle="transparent"
+            genius:g_theme="@array/GlacierGray" />
+
+        <net.qiujuer.genius.widget.GeniusEditText
+            xmlns:genius="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/enter_inches"
+            android:layout_width="75dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:inputType="number"
+            android:hint="Inches"
+            android:textSize="14sp"
+            android:gravity="center"
+            genius:g_borderWidth="2dp"
+            genius:g_cornerRadius="10dp"
+            genius:g_fieldStyle="transparent"
+            genius:g_theme="@array/GlacierGray" />
+
+    </LinearLayout>
+
+
+
+
+
+
+
+
+
+</LinearLayout>
+
+
+
+        <com.getbase.floatingactionbutton.FloatingActionButton
+            xmlns:fab="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/calculate"
+            android:layout_marginBottom="50dp"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            fab:fab_icon="@drawable/ic_check"
+            fab:fab_colorNormal="@color/black"
+            fab:fab_colorPressed="@color/light_grey"
+            android:layout_gravity="center|bottom"
+            />
+
+
+</FrameLayout>
+

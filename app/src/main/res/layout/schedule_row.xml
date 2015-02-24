@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/description"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <com.makeramen.RoundedImageView
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/instructor_pic"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="16dp"
+        android:layout_centerVertical="true"
+        android:scaleType="centerCrop"
+        android:layout_height="42dp"
+        android:layout_width="42dp"
+        app:corner_radius="30dip"
+        app:mutate_background="true"
+        app:oval="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
+        android:text="7:30am Pilates"
+        android:textSize="18dp"
+        android:id="@+id/event"
+        android:textColor="@color/black"
+        android:layout_alignLeft="@id/imageView2"
+        android:layout_centerVertical="true"/>
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:layout_marginBottom="8dp"
+        android:text="Jen"
+        android:textSize="14dp"
+        android:id="@+id/instructor"
+        android:textColor="@color/black"
+        android:layout_alignLeft="@id/event"
+        android:layout_below="@id/event"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
+        android:text="10:30"
+        android:textColor="@color/black"
+        android:textSize="32dp"
+        android:id="@+id/day" />
+
+
+
+    <View
+        android:layout_width="200dp"
+        android:layout_height="0dp"
+        android:id="@+id/imageView2"
+        android:layout_centerHorizontal="true" />
+
+
+
+
+
+
+</RelativeLayout>
+

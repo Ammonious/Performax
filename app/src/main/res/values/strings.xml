@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Performax</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="drawer_open">Open navigation drawer</string>
+    <string name="drawer_close">Close navigation drawer</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="menu_settings">Settings</string>
+    <string name="rate_app">Rate App</string>
+    <string name="share">Share with friends</string>
+    <string name="about">We understand the importance and the dedication it takes to change your lifestyle. We have a variety of membership options. Whether you would rather commit short-term or long-term. Be sure to ask about what membership specials we are offering at the time of your signing up. We want to establish good relationships with our members and help assist in you reaching your goals. \n \nEvery Performax Gyms Member is given a free fitness consultation and profile on our Exclusive Bio X Tracking software. This software allows you to track your progress, no matter if you are trying to gain weight or lose it. If you are not taking advantage of this come and talk to us, as mentioned before it is available to both current members and new members.\n \nWe also provide a great workout environment for all people. Come in today and talk to one of our team members about what membership option will work for you.</string>
+    <string name="title_activity_event_description">Performax</string>
+    <string name="title_activity_barcode">Gym Entry Card</string>
+    <string name="title_activity_calorie_results">Calorie Results</string>
+
+</resources>

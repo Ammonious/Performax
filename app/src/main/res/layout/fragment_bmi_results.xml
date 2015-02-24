@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar"/>
+
+
+
+    <ScrollView  xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:fab="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/scrollView"
+        android:background="@color/white"
+        android:layout_gravity="center_horizontal" >
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+
+            >
+
+            <views.RevealBackgroundView
+                android:id="@+id/vRevealBackground"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/root_view"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white">
+
+
+
+    <FrameLayout
+        android:id="@+id/vUpperPanel"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_gravity="center_horizontal"
+        android:background="@color/primary">
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:id="@+id/imageView6"
+            android:layout_gravity="center"
+            android:adjustViewBounds="true"
+            android:src="@drawable/logo"/>
+    </FrameLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="60dp"
+                android:text="Your BMI is"
+                android:id="@+id/title"
+                android:textColor="@color/black"
+                android:textSize="32dp"
+                android:layout_gravity="center_horizontal" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:id="@+id/bmi"
+        android:textColor="@color/black"
+        android:textSize="64dp"
+        android:layout_gravity="center_horizontal" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Overweight"
+        android:id="@+id/bmi_condition"
+        android:textColor="@color/black"
+        android:textSize="32dp"
+        android:layout_gravity="center_horizontal" />
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="60dp"
+                android:layout_marginBottom="16dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:lineSpacingExtra="2dp"
+                android:text="What does this mean?"
+                android:gravity="center"
+                android:id="@+id/description_title"
+                android:textColor="@color/black"
+                android:textSize="18dp"
+                android:layout_gravity="center_horizontal" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:lineSpacingExtra="2dp"
+        android:text="this is the description of your results and what it means."
+        android:gravity="center"
+        android:id="@+id/bmi_description"
+        android:textColor="@color/black"
+        android:textSize="16dp"
+        android:layout_gravity="center_horizontal" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:id="@+id/biophase"
+        android:src="@drawable/biophase"
+        android:layout_gravity="center_horizontal" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Biophase can help you achieve your fitness goals."
+        android:gravity="center"
+        android:id="@+id/call_to_action"
+        android:textColor="@color/black"
+        android:textSize="18dp"
+        android:layout_gravity="center_horizontal" />
+
+    <mehdi.sakout.fancybuttons.FancyButton
+        xmlns:fancy="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/learn_how"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:layout_marginBottom="16dp"
+        android:padding="10dp"
+        android:layout_gravity="center_horizontal"
+        fancy:defaultColor="@color/primary"
+        fancy:focusColor="@color/accent"
+        fancy:radius="5dp"
+        fancy:text="Learn How"
+        fancy:textColor="#FFFFFF">
+    </mehdi.sakout.fancybuttons.FancyButton>
+        </LinearLayout>
+        </FrameLayout>
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,519 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    tools:context="com.nffs.performax.CalorieResults">
+
+
+
+<include
+    android:id="@+id/toolbar"
+    layout="@layout/toolbar"/>
+
+<ScrollView  xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fab="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    android:id="@+id/scrollView"
+    android:background="@color/white"
+    android:layout_gravity="center_horizontal" >
+
+
+
+<FrameLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+
+    >
+
+    <views.RevealBackgroundView
+        android:id="@+id/vRevealBackground"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <LinearLayout
+        android:id="@+id/root_view"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/white"
+        tools:context="com.nffs.performax.CalorieResults">
+
+
+
+    <RelativeLayout
+        android:id="@+id/vUpperPanel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/primary">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="16dp"
+            android:layout_marginLeft="16dp"
+            android:text="To lose weight you should eat"
+            android:textColor="@color/white"
+            android:textSize="14dp"
+            android:id="@+id/textView2" />
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/textView2"
+            android:layout_marginLeft="16dp"
+            android:text="1700 to 1900"
+            android:textColor="@color/white"
+            android:textSize="34dp"
+            android:id="@+id/lose_calories" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/lose_calories"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="16dp"
+            android:layout_marginBottom="16dp"
+            android:text="calories per day"
+            android:textColor="@color/white"
+            android:textSize="20dp"
+            android:id="@+id/textView3" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/textView3"
+            android:gravity="center"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginBottom="8dp"
+            android:text="This calorie target will allow you to lose weight at a healthy and sustainable rate of 1 to 2 lbs per week."
+            android:textColor="@color/white"
+            android:textSize="14dp"
+            android:id="@+id/textView4" />
+
+
+        </RelativeLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="16dp"
+        android:text="Goal Recommendations"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        android:id="@+id/product_header" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="8dp"
+        >
+
+
+        <ImageView
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:id="@+id/imageView4"
+            android:layout_centerVertical="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:adjustViewBounds="true"
+            android:src="@drawable/carb_blockers"
+            />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/imageView4"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="16dp"
+            android:text="If you're interested in shedding body fat while holding on to lean muscle, listen up because this stuff not only sheds fat but actually aids in building muscle tissue. In other words this Carb Blocker Formula increases muscle building and decreases fat accumulation at the same time. This is unheard of in normal nutritional processes. "
+            android:textColor="@color/black"
+            android:textSize="12dp"
+            android:id="@+id/description2" />
+
+
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="8dp"
+        >
+
+
+        <ImageView
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:id="@+id/imageView5"
+            android:layout_centerVertical="true"
+            android:adjustViewBounds="true"
+            android:src="@drawable/ultra_pro"
+            />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/imageView5"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="16dp"
+            android:text="Your pancreas, which is your weight-control organ, requires at least a 2:1 protein to carb ratio in each meal in order to release the hormone glucagon, which burns fat. Give the pancreas the wrong ratio, and it releases insulin instead, which causes your body to store fat. ULTRAPRO™ provides a 6:1 ratio of protein to carbohydrates to melt the fat from those hard-to-access areas. "
+            android:textColor="@color/black"
+            android:textSize="12dp"
+            android:id="@+id/description3" />
+
+
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="8dp"
+        >
+
+
+        <ImageView
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:id="@+id/imageView3"
+            android:layout_centerVertical="true"
+            android:adjustViewBounds="true"
+            android:src="@drawable/hcg"
+            />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/imageView3"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="16dp"
+            android:text="hCG™ Infused with 72 IONIC TRACE MINERALS™ which allow your body to absorb 40% more than most supplements in the market. hCG also modifies the way you eat and changes your appetite by resetting your hypothalamus, so that you can easily maintain the low-calorie diet."
+            android:textColor="@color/black"
+            android:textSize="12dp"
+            android:id="@+id/description" />
+
+
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/primary">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="16dp"
+            android:layout_marginLeft="16dp"
+            android:text="To maintain your weight you should eat"
+            android:textColor="@color/white"
+            android:textSize="14dp"
+            android:id="@+id/textView6" />
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/textView6"
+            android:layout_marginLeft="16dp"
+            android:text="2200 to 2400"
+            android:textColor="@color/white"
+            android:textSize="34dp"
+            android:id="@+id/man_calories" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/man_calories"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="16dp"
+            android:layout_marginBottom="16dp"
+            android:text="calories per day"
+            android:textColor="@color/white"
+            android:textSize="20dp"
+            android:id="@+id/textView7" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/textView7"
+            android:gravity="center"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginBottom="8dp"
+            android:text="This calorie target allows you to maintain your current weight, within a margin of a few pounds."
+            android:textColor="@color/white"
+            android:textSize="14dp"
+             />
+
+
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="16dp"
+        android:text="Goal Recommendations"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        android:id="@+id/product_header2" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="8dp"
+        >
+
+
+        <ImageView
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:id="@+id/stamina"
+            android:layout_centerVertical="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:adjustViewBounds="true"
+            android:src="@drawable/stamina"
+            />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/stamina"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="16dp"
+            android:text="Stamina gives you more endurance—more staying power—which makes your workouts a whole lot easier. Stamina neutralizes the acid in your blood stream in much the same way antacid reduces the acid in your stomach. When lactic acid is neutralized, the blood returns to its refreshed state. Now you can crank out set after set, because ATP production remains high while the buffering action keeps right on refreshing you again and again. So, not only do you have plenty of energy for your workout, but when you head home, you're refreshed rather than worn out."
+            android:textColor="@color/black"
+            android:textSize="12dp"
+            android:id="@+id/stamina_description" />
+
+
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="8dp"
+        >
+
+
+        <ImageView
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:id="@+id/revive"
+            android:layout_centerVertical="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:adjustViewBounds="true"
+            android:src="@drawable/revive"
+            />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/revive"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="16dp"
+            android:text="This powerful formula improves athletic performance, boosts energy, stimulates the immune system, reduces free radical damage, assures healthy nerve tissue, initiates over 60 different needed enzymes, and at the same time, lowers cholesterol. But you can't take that little one-a-day dosage and expect any noticeable improvement. Current Recommended Daily Allowance (RDA) represents only the levels heavily lobbied by the food industry to make packaged foods seem more nutritious. For optimum health, you need the higher '5-capsules-per-day-levels' suggested on the Revive label. Revive has a powerful B vitamin, so you should start with just 1 or 2 capsules for the first week or two until your body becomes accustomed to the higher levels."
+            android:textColor="@color/black"
+            android:textSize="12dp"
+            android:id="@+id/revive_description" />
+
+
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/primary">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="16dp"
+            android:layout_marginLeft="16dp"
+            android:text="To gain weight you should eat"
+            android:textColor="@color/white"
+            android:textSize="14dp"
+            android:id="@+id/gain1" />
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/gain1"
+            android:layout_marginLeft="16dp"
+            android:text="2700 to 2900"
+            android:textColor="@color/white"
+            android:textSize="34dp"
+            android:id="@+id/gain_calories" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/gain_calories"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="16dp"
+            android:layout_marginBottom="16dp"
+            android:text="calories per day"
+            android:textColor="@color/white"
+            android:textSize="20dp"
+            android:id="@+id/gain2" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/gain2"
+            android:gravity="center"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginBottom="8dp"
+            android:text="This calorie target will allow you to gain weight at a healthy and sustainable rate of 1 to 2 lbs per week."
+            android:textColor="@color/white"
+            android:textSize="14dp"
+            />
+
+
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="16dp"
+        android:text="Goal Recommendations"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        android:id="@+id/product_header3" />
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="8dp"
+        >
+
+
+        <ImageView
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:id="@+id/hyper"
+            android:layout_centerVertical="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:adjustViewBounds="true"
+            android:src="@drawable/hyper"
+            />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/hyper"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="16dp"
+            android:text="During the first few months of a newborn's life, a mother's milk is full of colostrum, which contains powerful growth agents called 'Insulin-Like Growth Factors.' These factors, called IGF1 and IGF2, are the reason babies grow so much the first few months after birth, doubling or even tripling in weight. How do these growth factors work? First, they speed up the rate at which amino acids are synthesized; then they slow down the amino acid destruction rate; and then to top it off, they are proteinsparing so even fewer amino acids are needed. The result is incredible muscle growth."
+            android:textColor="@color/black"
+            android:textSize="12dp"
+            android:id="@+id/hyper_description" />
+
+
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="8dp"
+        >
+
+
+        <ImageView
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:id="@+id/nitro"
+            android:layout_centerVertical="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:adjustViewBounds="true"
+            android:src="@drawable/nitro_amp"
+            />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/nitro"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="16dp"
+            android:text="Nitro Amp boosts Growth Hormone which increases muscle size, strength, power and recovery. Nitro Amp gives you such a lasting pump you not only leave the gym with a pump, you take the pump to the gym with you the next day."
+            android:textColor="@color/black"
+            android:textSize="12dp"
+            android:id="@+id/nitro_description" />
+
+
+
+
+    </RelativeLayout>
+
+    </LinearLayout>
+</FrameLayout>
+
+</ScrollView>
+
+</LinearLayout>

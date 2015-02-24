@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:id="@+id/imageView"
+        android:src="@drawable/widget_logo"
+        android:layout_gravity="center_horizontal" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:textSize="18sp"
+        android:text="Let us help you visualize your goals. Fill the form out below and we'll contact you to schedule a free Biophase analysis"
+        android:gravity="center"
+        android:lineSpacingExtra="2dp"
+        android:id="@+id/title_view"
+        android:layout_gravity="center_horizontal" />
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal">
+
+    <net.qiujuer.genius.widget.GeniusEditText
+        xmlns:genius="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/first_name"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:maxLines="1"
+        android:singleLine="true"
+        android:hint="First Name"
+        android:textSize="14sp"
+        android:gravity="center"
+        genius:g_borderWidth="2dp"
+        genius:g_cornerRadius="10dp"
+        genius:g_fieldStyle="transparent"
+        genius:g_theme="@array/GlacierGray" />
+
+    <net.qiujuer.genius.widget.GeniusEditText
+        xmlns:genius="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/last_name"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:singleLine="true"
+        android:inputType="number"
+        android:hint="Last Name"
+        android:textSize="14sp"
+        android:gravity="center"
+        genius:g_borderWidth="2dp"
+        genius:g_cornerRadius="10dp"
+        genius:g_fieldStyle="transparent"
+        genius:g_theme="@array/GlacierGray" />
+
+    </LinearLayout>
+
+    <net.qiujuer.genius.widget.GeniusEditText
+        xmlns:genius="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/email"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="8dp"
+        android:maxLines="1"
+        android:singleLine="true"
+        android:inputType="textEmailAddress"
+        android:hint="Email Address"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp"
+        android:textSize="14sp"
+        android:gravity="center"
+        genius:g_borderWidth="2dp"
+        genius:g_cornerRadius="10dp"
+        genius:g_fieldStyle="transparent"
+        genius:g_theme="@array/GlacierGray" />
+
+        <net.qiujuer.genius.widget.GeniusEditText
+            xmlns:genius="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/phone_number"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="8dp"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:inputType="phone"
+            android:hint="Phone Number"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            android:textSize="14sp"
+            android:gravity="center"
+            genius:g_borderWidth="2dp"
+            genius:g_cornerRadius="10dp"
+            genius:g_fieldStyle="transparent"
+            genius:g_theme="@array/GlacierGray" />
+
+
+
+
+    <net.qiujuer.genius.widget.GeniusEditText
+        xmlns:genius="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/comments"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="8dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:lines="5"
+        android:singleLine="true"
+        android:inputType="textMultiLine"
+        android:hint="Additional Comments"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp"
+        android:textSize="14sp"
+        android:gravity="center"
+        genius:g_borderWidth="2dp"
+        genius:g_cornerRadius="10dp"
+        genius:g_fieldStyle="transparent"
+        genius:g_theme="@array/GlacierGray" />
+
+
+
+
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_marginTop="8dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal">
+
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="Cancel"
+        android:id="@+id/cancel" />
+
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="Send"
+        android:id="@+id/submit" />
+
+    </LinearLayout>
+</LinearLayout>

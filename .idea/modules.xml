@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/app/libraries/FloatingActionButton/FloatingActionButton.iml" filepath="$PROJECT_DIR$/app/libraries/FloatingActionButton/FloatingActionButton.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Performax.iml" filepath="$PROJECT_DIR$/Performax.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/libraries/betterpickers/betterpickers.iml" filepath="$PROJECT_DIR$/app/libraries/betterpickers/betterpickers.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/libraries/fancybuttons_library/fancybuttons_library.iml" filepath="$PROJECT_DIR$/app/libraries/fancybuttons_library/fancybuttons_library.iml" />
+    </modules>
+  </component>
+</project>
+

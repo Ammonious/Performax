@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView  xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fab="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    android:id="@+id/scrollView"
+    android:background="#424242"
+    android:layout_gravity="center_horizontal" >
+
+
+
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="280dp"
+        android:layout_gravity="center_horizontal">
+
+    <com.flaviofaria.kenburnsview.KenBurnsView
+        android:id="@+id/image"
+        android:layout_width="fill_parent"
+        android:layout_height="240dp"
+        android:adjustViewBounds="true"
+        android:src="@drawable/about" />
+
+
+    <com.getbase.floatingactionbutton.FloatingActionButton
+
+        android:id="@+id/navigate"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        fab:fab_icon="@drawable/ic_navigate"
+        fab:fab_colorNormal="@color/primary"
+        fab:fab_colorPressed="@color/accent"
+        android:layout_gravity="end|bottom"
+        android:layout_marginRight="16dp"
+        />
+
+    </FrameLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:text="Club Hours"
+        android:textSize="28dp"
+        android:textColor="@color/white"
+        android:background="@color/primary"
+        android:id="@+id/hours" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center"
+        android:text="Mon - Thur"
+        android:textColor="@color/white"
+        android:lineSpacingExtra="1dp"
+        android:textSize="18dp"
+        android:id="@+id/date_header" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center"
+        android:text="4:30 am - 11:00 pm"
+        android:textColor="@color/white"
+        android:lineSpacingExtra="1dp"
+        android:textSize="18dp"
+        android:id="@+id/date_body" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center"
+        android:text="Friday"
+        android:textColor="@color/white"
+        android:lineSpacingExtra="1dp"
+        android:textSize="18dp"
+        android:id="@+id/date_header2" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center"
+        android:text="4:30 am - 7:00 pm"
+        android:textColor="@color/white"
+        android:lineSpacingExtra="1dp"
+        android:textSize="18dp"
+        android:id="@+id/date_body2" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center"
+        android:text="Saturday"
+        android:textColor="@color/white"
+        android:lineSpacingExtra="1dp"
+        android:textSize="18dp"
+        android:id="@+id/date_header3" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center"
+        android:text="6:00 am - 4:00 pm"
+        android:textColor="@color/white"
+        android:lineSpacingExtra="1dp"
+        android:textSize="18dp"
+        android:id="@+id/date_body3" />
+
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="8dp"
+        android:background="@color/primary"
+        android:text="Club Amenities"
+        android:textSize="28dp"
+        android:textColor="@color/white"
+        android:id="@+id/amenities" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_horizontal">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:text="Cardio"
+            android:textSize="16dp"
+            android:textColor="@color/white"
+            android:id="@+id/text1" />
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:text="Free Weights"
+            android:textSize="16dp"
+            android:textColor="@color/white"
+            android:id="@+id/text2" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="16dp"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:text="Group Classes"
+            android:textSize="16dp"
+            android:textColor="@color/white"
+            android:id="@+id/text3" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_below="@+id/text1"
+            android:gravity="center"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:text="Child Care"
+            android:textSize="16dp"
+            android:textColor="@color/white"
+            android:id="@+id/text4" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/text2"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:text="Personal Training"
+            android:textSize="16dp"
+            android:textColor="@color/white"
+            android:id="@+id/text5" />
+
+
+
+
+
+
+
+
+
+
+
+    </RelativeLayout>
+
+    <mehdi.sakout.fancybuttons.FancyButton
+        xmlns:fancy="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/btn_facebook"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:layout_marginBottom="16dp"
+        android:padding="10dp"
+        android:layout_gravity="center_horizontal"
+        fancy:defaultColor="#3b5998"
+        fancy:focusColor="#5474b8"
+        fancy:iconPosition="left"
+        fancy:iconResource="@drawable/facebook"
+        fancy:radius="5dp"
+        fancy:text="Like us on Facebook"
+        fancy:textColor="#FFFFFF">
+    </mehdi.sakout.fancybuttons.FancyButton>
+
+
+</LinearLayout>
+
+    </ScrollView>

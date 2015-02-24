@@ -1,0 +1,12 @@
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+
+
+    <PreferenceCategory android:title="Inspire Settings" >
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:key="prefNotification"
+            android:summary="Uncheck the box to disable notifications"
+            android:title="Notifications" />
+    </PreferenceCategory>
+
+</PreferenceScreen>
