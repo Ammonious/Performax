@@ -31,7 +31,7 @@ public class WeightTracker extends Fragment {
     int fragVal;
     FancyButton Submit;
     EditText weight;
-    List<ValueLineChart> mValues = new ArrayList<ValueLineChart>();
+ //   List<ValueLineChart> mValues = new ArrayList<ValueLineChart>();
 
     public static WeightTracker init(int val) {
         WeightTracker truitonFrag = new WeightTracker();
