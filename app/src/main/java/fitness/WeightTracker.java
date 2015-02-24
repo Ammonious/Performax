@@ -69,8 +69,8 @@ public class WeightTracker extends Fragment {
 
         final ValueLineSeries series = new ValueLineSeries();
         series.setColor(0xFF56B7F1);
-        series.s
-        series.setSeries(mValues);
+      //  series.s
+       // series.setSeries(mValues);
        //  series.
        //    series.setSeries();
 
