@@ -16,9 +16,13 @@ import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Calendar;
+import java.util.Date;
+import java.util.LinkedList;
 import java.util.List;
 import mehdi.sakout.fancybuttons.FancyButton;
 import utils.TinyDB;
+import utils.Weight;
+import utils.WeightDBHelper;
 
 
 /**
@@ -27,7 +31,7 @@ import utils.TinyDB;
  */
 public class WeightTracker extends Fragment {
 
-
+    private WeightDBHelper db;
     int fragVal;
     FancyButton Submit;
     EditText weight;
@@ -46,6 +50,7 @@ public class WeightTracker extends Fragment {
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         fragVal = getArguments() != null ? getArguments().getInt("val") : 1;
+        db = new WeightDBHelper(getActivity().getApplicationContext());
     }
 
 
@@ -53,41 +58,19 @@ public class WeightTracker extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         final View rootView = inflater.inflate(R.layout.fragment_weight, container, false);
 
-
-        DateFormat dateFormat = new SimpleDateFormat("yyyy/MM/dd");
-        Calendar cal = Calendar.getInstance();
-        System.out.println(dateFormat.format(cal.getTime()));
-
-        final String mCurrentdate = dateFormat.format(cal.getTime());
-
-
-        TinyDB tinyDB = new TinyDB(getActivity());
-     //   tinyDB.putList("" , valsComp1);
-
-
         ValueLineChart mCubicValueLineChart = (ValueLineChart) rootView.findViewById(R.id.weight_chart);
 
         final ValueLineSeries series = new ValueLineSeries();
         series.setColor(0xFF56B7F1);
-      //  series.s
-       // series.setSeries(mValues);
-       //  series.
-       //    series.setSeries();
 
+        List<Weight> weights = db.getAllWeights();
 
+        DateFormat dateFormat = new SimpleDateFormat("yyyy/MM/dd");
 
-        series.addPoint(new ValueLinePoint("Jan", 2.4f));
-        series.addPoint(new ValueLinePoint("Feb", 3.4f));
-        series.addPoint(new ValueLinePoint("Mar", .4f));
-        series.addPoint(new ValueLinePoint("Apr", 1.2f));
-        series.addPoint(new ValueLinePoint("Mai", 2.6f));
-        series.addPoint(new ValueLinePoint("Jun", 1.0f));
-        series.addPoint(new ValueLinePoint("Jul", 3.5f));
-        series.addPoint(new ValueLinePoint("Aug", 2.4f));
-        series.addPoint(new ValueLinePoint("Sep", 2.4f));
-        series.addPoint(new ValueLinePoint("Oct", 3.4f));
-        series.addPoint(new ValueLinePoint("Nov", .4f));
-        series.addPoint(new ValueLinePoint("Dec", 1.3f));
+        for(Weight w : weights) {
+            Date d = new Date(w.dateInMilliseconds);
+            series.addPoint(new ValueLinePoint(dateFormat.format(d), w.weight));
+        }
 
         mCubicValueLineChart.addSeries(series);
         mCubicValueLineChart.startAnimation();
@@ -101,7 +84,7 @@ public class WeightTracker extends Fragment {
             public void onClick(View v) {
 
 
-                series.addPoint(new ValueLinePoint(mCurrentdate, 2.4f));
+                //series.addPoint(new ValueLinePoint(mCurrentdate, 2.4f));
 
             }
         });

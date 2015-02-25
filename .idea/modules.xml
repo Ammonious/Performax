@@ -7,6 +7,7 @@
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/libraries/betterpickers/betterpickers.iml" filepath="$PROJECT_DIR$/app/libraries/betterpickers/betterpickers.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/libraries/fancybuttons_library/fancybuttons_library.iml" filepath="$PROJECT_DIR$/app/libraries/fancybuttons_library/fancybuttons_library.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/libraries/libraries.iml" filepath="$PROJECT_DIR$/app/libraries/libraries.iml" />
     </modules>
   </component>
 </project>
